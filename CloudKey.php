@@ -95,7 +95,7 @@ class CloudKey_File extends CloudKey_Api
 {
     public function upload_file($file)
     {
-        $result = parent::upload();
+        $result = $this->upload();
 
         $ch = curl_init();
 
